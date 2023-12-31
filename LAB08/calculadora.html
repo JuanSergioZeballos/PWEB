@@ -14,29 +14,34 @@
 		</tr>
 		<tr>
 			<td><button onclick="addToDisplay('7')">7</button></td>
-			<td><button onclick="addToDisplay('7')">8</button></td>
-			<td><button onclick="addToDisplay('7')">9</button></td>
-			<td><button onclick="addToDisplay('7')">/</button></td>
+			<td><button onclick="addToDisplay('8')">8</button></td>
+			<td><button onclick="addToDisplay('9')">9</button></td>
+			<td><button onclick="addToDisplay('/')">/</button></td>
 		</tr>
 		<tr>
-			<td><button onclick="addToDisplay('7')">4</button></td>
-			<td><button onclick="addToDisplay('7')">5</button></td>
-			<td><button onclick="addToDisplay('7')">6</button></td>
-			<td><button onclick="addToDisplay('7')">*</button></td>
+			<td><button onclick="addToDisplay('4')">4</button></td>
+			<td><button onclick="addToDisplay('5')">5</button></td>
+			<td><button onclick="addToDisplay('6')">6</button></td>
+			<td><button onclick="addToDisplay('*')">*</button></td>
 		</tr>
 		<tr>
-			<td><button onclick="addToDisplay('7')">1</button></td>
-			<td><button onclick="addToDisplay('7')">2</button></td>
-			<td><button onclick="addToDisplay('7')">3</button></td>
-			<td><button onclick="addToDisplay('7')">+</button></td>
+			<td><button onclick="addToDisplay('1')">1</button></td>
+			<td><button onclick="addToDisplay('2')">2</button></td>
+			<td><button onclick="addToDisplay('3')">3</button></td>
+			<td><button onclick="addToDisplay('+')">+</button></td>
 		</tr>
 		<tr>
-			<td><button onclick="addToDisplay('7')">n/a</button></td>
-			<td><button onclick="addToDisplay('7')">0</button></td>
-			<td><button onclick="addToDisplay('7')">=</button></td>
-			<td><button onclick="addToDisplay('7')">-</button></td>
+			<td><button onclick="addToDisplay('')">del</button></td>
+			<td><button onclick="addToDisplay('0')">0</button></td>
+			<td><button onclick="addToDisplay('=')">=</button></td>
+			<td><button onclick="addToDisplay('-')">-</button></td>
 		</tr>
 	</table>
 	</div>
+	<script>
+		function addToDisplay(value) {
+            document.getElementById('display').value += value;
+        }
+	</script>
 </body>
 </html>
