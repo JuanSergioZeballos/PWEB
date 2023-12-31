@@ -8,7 +8,7 @@
 <body>
 	<h1>Calculadora basica</h1>
 	<div align="center">
-		<form>
+		<form method="post" action="cgi-bin/operaciones.cgi">
 			<table>
 				<tr>
 					<td colspan="4" align="center"><input type="text" id="display" readonly></td>
@@ -34,7 +34,7 @@
 				<tr>
 					<td><button type="button" onclick="addToDisplay('')">C</button></td>
 					<td><button type="button" onclick="addToDisplay('0')">0</button></td>
-					<td><button type="button" onclick="addToDisplay('=')">=</button></td>
+					<td><button type="submit" name="submit" value="calculate">=</button></td>
 					<td><button type="button" onclick="addToDisplay('-')">-</button></td>
 				</tr>
 			</table>
