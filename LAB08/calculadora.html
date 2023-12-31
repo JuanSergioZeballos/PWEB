@@ -14,34 +14,39 @@
 					<td colspan="4" align="center"><input type="text" id="display" readonly></td>
 				</tr>
 				<tr>
-					<td><button onclick="addToDisplay('7')">7</button></td>
-					<td><button onclick="addToDisplay('8')">8</button></td>
-					<td><button onclick="addToDisplay('9')">9</button></td>
-					<td><button onclick="addToDisplay('/')">/</button></td>
+					<td><button type="button" onclick="addToDisplay('7')">7</button></td>
+					<td><button type="button" onclick="addToDisplay('8')">8</button></td>
+					<td><button type="button" onclick="addToDisplay('9')">9</button></td>
+					<td><button type="button" onclick="addToDisplay('/')">/</button></td>
 				</tr>
 				<tr>
-					<td><button onclick="addToDisplay('4')">4</button></td>
-					<td><button onclick="addToDisplay('5')">5</button></td>
-					<td><button onclick="addToDisplay('6')">6</button></td>
-					<td><button onclick="addToDisplay('*')">*</button></td>
+					<td><button type="button" onclick="addToDisplay('4')">4</button></td>
+					<td><button type="button" onclick="addToDisplay('5')">5</button></td>
+					<td><button type="button" onclick="addToDisplay('6')">6</button></td>
+					<td><button type="button" onclick="addToDisplay('*')">*</button></td>
 				</tr>
 				<tr>
-					<td><button onclick="addToDisplay('1')">1</button></td>
-					<td><button onclick="addToDisplay('2')">2</button></td>
-					<td><button onclick="addToDisplay('3')">3</button></td>
-					<td><button onclick="addToDisplay('+')">+</button></td>
+					<td><button type="button" onclick="addToDisplay('1')">1</button></td>
+					<td><button type="button" onclick="addToDisplay('2')">2</button></td>
+					<td><button type="button" onclick="addToDisplay('3')">3</button></td>
+					<td><button type="button" onclick="addToDisplay('+')">+</button></td>
 				</tr>
 				<tr>
-					<td><button onclick="addToDisplay('C')">C</button></td>
-					<td><button onclick="addToDisplay('0')">0</button></td>
-					<td><button onclick="addToDisplay('=')">=</button></td>
-					<td><button onclick="addToDisplay('-')">-</button></td>
+					<td><button type="button" onclick="addToDisplay('')">C</button></td>
+					<td><button type="button" onclick="addToDisplay('0')">0</button></td>
+					<td><button type="button" onclick="addToDisplay('=')">=</button></td>
+					<td><button type="button" onclick="addToDisplay('-')">-</button></td>
 				</tr>
 			</table>
 		</form>
 	</div>
 	<script>
-
+		function addToDisplay(value){
+			document.getElementById('display').value+=value;
+			if(value==''){
+				display.value='';
+			}
+		}
 	</script>
 </body>
 </html>
