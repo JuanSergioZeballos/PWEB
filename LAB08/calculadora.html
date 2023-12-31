@@ -31,7 +31,7 @@
 			<td><button onclick="addToDisplay('+')">+</button></td>
 		</tr>
 		<tr>
-			<td><button onclick="addToDisplay('')">del</button></td>
+			<td><button onclick="addToDisplay('C')">C</button></td>
 			<td><button onclick="addToDisplay('0')">0</button></td>
 			<td><button onclick="addToDisplay('=')">=</button></td>
 			<td><button onclick="addToDisplay('-')">-</button></td>
@@ -41,6 +41,9 @@
 	<script>
 		function addToDisplay(value) {
             document.getElementById('display').value += value;
+			if(value=='C'){
+				display.value='';
+			}
         }
 	</script>
 </body>
