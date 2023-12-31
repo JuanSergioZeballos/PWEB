@@ -3,4 +3,12 @@ body {
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-size:100% 100%;
+	text-align:center;
+}
+table,th,td{
+	margin:10px;
+	padding:10px;
+	border:1px solid black;
+	border-radius:10px solid;
+	background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQzNqYhTq08hzQTnmcvOvOFSPBmNzwIw5Q1A&usqp=CAU');
 }
